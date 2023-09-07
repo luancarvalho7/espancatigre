@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Espanca Tigre</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel='stylesheet' type='text/css' media='screen' href='styles.css'>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css" />
+    <link rel="shortcut icon" href="./favicon.png" type="image/x-icon">
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
+</head>
+
+<body>
+    <main>
+        <div id="transition"></div>
+        <div id="mainCta">
+            <div id="ctaWrapper">
+                <h1>ESPANCA TIGRE</h1>
+                <h2>Você acabou de liberar o acesso 100% gratuito ao ESPANCA TIGRE. Clique no botão abaixo para começar a forrar seu bolso ainda hoje!</h2>
+                <a href="https://chat.whatsapp.com/CtyIv23ixVR1H0pm1bGgKs" id="btnCta"> <span>CLIQUE AQUI</span> para
+                    acessar o grupo <span> GRATUITO</span> </a>
+            </div>
+        </div>
+    </main>
+
+    <div id="cards">
+        <h1> O que dizem sobre o <span>ESPANCA TIGRE? </span></h1>
+        <div class="swiper">
+            <!-- Additional required wrapper -->
+            <div class="swiper-wrapper">
+                <!-- Slides -->
+                <div class="swiper-slide"><img src="./assets/r1.png" alt=""></div>
+                <div class="swiper-slide"><img src="./assets/r2.png" alt=""></div>
+                <div class="swiper-slide"><img src="./assets/r3.png" alt=""></div>
+                <div class="swiper-slide"><img src="./assets/r4.png" alt=""></div>
+            </div>
+        </div>
+    </div>
+
+    <p id="pTerms">© 2023 Espanca Tigre . Todos os Direitos ReservadosATENÇÃO: As vendas dos nossos produtos são feitas
+        exclusivamente através do site.
+        ATENÇÃO: Este site não é afiliado ao Facebook ou a qualquer entidade do Facebook. Depois que você sair do
+        Facebook, a responsabilidade não é deles e sim do nosso site. Fazemos todos os esforços para indicar claramente
+        e mostrar todas as provas do produto e usamos resultados reais. Nós não vendemos o seu e-mail ou qualquer
+        informação para terceiros. Jamais fazemos nenhum tipo de spam. Se você tiver alguma dúvida, sinta-se à vontade
+        para usar o link de contato e falar conosco em horário comercial de Segunda a Sextas das 09h00 ás 18h00. Lemos e
+        respondemos todas as mensagens por ordem de chegada.</p>
+    <script>
+        const swiper = new Swiper('.swiper', {
+            // Optional parameters
+            direction: 'horizontal',
+            loop: true,
+
+            breakpoints: {
+                500: {
+                    slidesPerView: 2,
+                    spaceBetween: 0
+                },
+                800:{
+                    slidesPerView: 3,
+                    spaceBetween: 0
+
+                },                
+                1300:{
+                    slidesPerView: 4,
+                    spaceBetween: 0
+
+                }
+            }
+            });
+    </script>
+</body>
+
+</html>

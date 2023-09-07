@@ -1,0 +1,173 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700&family=Montserrat:wght@300;400;800&display=swap');
+
+* {
+    padding: 0px;
+    margin: 0px;
+}
+
+main {
+    width: 100%;
+    height: 800px;
+    background-image: url('./assets/bg.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: center;
+    background-position: center;
+}
+
+#transition {
+    width: 100%;
+    height: 80px;
+    background: linear-gradient(180deg, rgba(0, 0, 0, 0) 0%, #020303 89.86%);
+    bottom: 0px;
+    position: absolute;
+}
+
+#mainCta {
+    bottom: -30px;
+    position: absolute;
+    height: 320px;
+    width: 440px;
+    border-radius: 41px;
+    background: linear-gradient(197deg, #FFC700 -13.53%, #F00 88.46%);
+    backdrop-filter: blur(150px);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+}
+
+#ctaWrapper {
+    background-color: black;
+    height: 316px;
+    width: 436px;
+    border-radius: 41px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+#ctaWrapper h1 {
+    font-size: 36px;
+    font-style: normal;
+    font-weight: 700;
+    margin-bottom: 9px;
+}
+
+#ctaWrapper h2 {
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 400;
+    text-align: center;
+    color: #C4C4C4;
+    margin-bottom: 32px;
+}
+
+#btnCta {
+    border-radius: 999px;
+    background: linear-gradient(180deg, #14FF00 0%, #0A8000 100%);
+    width: 280px;
+    text-align: center;
+    text-decoration: none;
+    color: black;
+    padding: 9px 52px;
+    outline: none;
+    border: none;
+    font-size: 18px;
+    cursor: pointer;
+
+}
+
+#btnCta span {
+    font-weight: 700;
+}
+
+#pTerms {
+    margin-top: 120px;
+    color: rgba(196, 196, 196, 0.30);
+    text-align: center;
+    font-family: Montserrat;
+    font-size: 13px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+.swiper-slide {
+    width: 60px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: visible;
+}
+
+.swiper {
+    width: 90vw;
+    max-width: 1280px;
+}
+
+#cards {
+    margin-top: 120px;
+}
+
+#cards h1 {
+    text-align: center;
+    margin-bottom: 32px;
+}
+
+#cards h1 span {
+    
+    background: linear-gradient(197deg, #FFC700 -13.53%, #F00 88.46%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+body {
+    background-color: black;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-family: 'Montserrat', sans-serif;
+    color: white;
+}
+
+@media (max-width: 1000px) {
+
+    .swiper {
+        max-width: 900px;
+    }
+}
+
+@media (max-width: 500px) {
+    #mainCta {
+        width: 95vw;
+    }
+
+    #ctaWrapper {
+        width: 93.5vw;
+    }
+
+    #ctaWrapper h1 {
+        font-size: 32px;
+        text-align: center;
+    }
+
+    #ctaWrapper h2 {
+        font-size: 18px;
+    }
+
+    #btnCta {
+        font-size: 18px;
+        width: fit-content;
+        max-width: 250px;
+    }
+
+    .swiper {
+        max-width: 350px;
+    }
+}
